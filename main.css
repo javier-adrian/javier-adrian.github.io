@@ -5,3 +5,8 @@ body {
     color: #282828;
     font-family: 'Inter';
 }
+
+.reversed {
+    background-color: #282828;
+    color: #fafafa;
+}
