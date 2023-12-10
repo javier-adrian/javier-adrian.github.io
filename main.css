@@ -24,6 +24,10 @@ body {
     border-color: #313131 !important;
 }
 
+footer > div > a {
+    color: #999 !important;
+}
+
 /* a {
     color: #313131 !important;
 } */
