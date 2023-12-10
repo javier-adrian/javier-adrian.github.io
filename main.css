@@ -2,16 +2,36 @@
 
 body {
     background-color: #fafafa;
-    color: #282828;
+    color: #313131;
     font-family: 'Inter';
 }
 
 .reversed {
-    background-color: #282828;
+    background-color: #313131;
     color: #fafafa;
 }
 
 .btn:focus,.btn:active {
     outline: none !important;
     box-shadow: none;
- }
+}
+
+.border-bottom {
+    border-color: #313131 !important;
+}
+
+.border {
+    border-color: #313131 !important;
+}
+
+/* a {
+    color: #313131 !important;
+} */
+
+/* 
+.border {
+    border-color: #313131 !important;
+}
+.border-bottom {
+    border-color: #313131 !important;
+} */
