@@ -6,6 +6,10 @@ body {
     font-family: 'Inter';
 }
 
+#works-right {
+    min-width: 328px;
+}
+
 .reversed {
     background-color: #313131;
     color: #fafafa;
@@ -42,6 +46,20 @@ footer > div > a {
     background-color: #313131;
 }
 
+.carousel-indicators.reversed .active {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #fafafa;
+}
+
+.carousel-indicators.reversed :not(.active){
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #fafafa;
+}
+
 
 .bi-chevron-left {
     color: #313131 !important;
@@ -49,6 +67,15 @@ footer > div > a {
 }
 .bi-chevron-right {
     color: #313131 !important;
+    font-size: 34px !important;
+}
+
+.bi-chevron-left.reversed {
+    color: #fafafa !important;
+    font-size: 34px !important;
+}
+.bi-chevron-right.reversed{
+    color: #fafafa !important;
     font-size: 34px !important;
 }
 .bi-person {

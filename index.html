@@ -11,6 +11,8 @@
     </head>
     <body>
         <script src="bootstrap/bootstrap.bundle.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="main.js"></script>
 
     <!--                                                             NAVBAR  -->
 
@@ -59,17 +61,99 @@
 
     <!--                                                            CAROUSEL -->
 
-        <div class="container-fluid reversed">
-            <div class="my-5 container">
-                <h1 class="fw-bolder text-center py-5">Works</h1>
-                <img class="mx-5 my-5 pb-5" src="assets/OpenGL-triangle.png" alt="OpenGL-triangle" width="328">
+        <div class="container-fluid reversed pb-4">
+            <div class="my-5 container py-5">
+                <h1 class="fw-bolder text-center py-5 mb-5">Works</h1>
+                <div class="row align-items-center">
+                    <div class="container-fluid col">
+                        <div id="img-carousel" class="carousel slide carousel-fade">
+                            <div class="class-inner">
+                                <div class="carousel-item active text-center">
+                                    <img src="assets/OpenGL-triangle.png" alt="" width="328">
+                                </div>
+
+                                <div class="carousel-item text-center">
+                                    <img src="assets/t-rex-runner.png" alt="" width="328">
+                                </div>
+
+                                <div class="carousel-item text-center">
+                                    <img src="assets/portfolio.png" alt="" width="328">
+                                </div>
+
+                                <div class="carousel-item text-center">
+                                    <img src="assets/resume.png" alt="" width="328">
+                                </div>
+                            </div>
+
+                            <button class="carousel-control-prev d-none" type="button" data-bs-target="#img-carousel" data-bs-slide="prev">
+                                <span class="bi-chevron-left reversed" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+
+                            <button class="carousel-control-next d-none" type="button" data-bs-target="#img-carousel" data-bs-slide="next">
+                                <span class="bi-chevron-right reversed" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+
+                            <div class="carousel-indicators reversed d-none">
+                                <button id="img1" type="button" data-bs-target="#img-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button id="img2" type="button" data-bs-target="#img-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button id="img3" type="button" data-bs-target="#img-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button id="img4" type="button" data-bs-target="#img-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid col" id="works-right">
+                        <div id="content-carousel" class="carousel slide container mb-5">
+                            <div class="carousel-inner mt-5">
+                                <div class="carousel-item active text-center mb-5">
+                                    <h1 class="fw-bold">Dynamic OpenGL Triangle</h1>
+                                    <p class="fw-normal w-50 text-center mx-auto my-5">A visualization of a multi-colored triangle shown on a window using solely OpenGL and C.</p>
+                                </div>
+
+                                <div class="carousel-item text-center mb-5">
+                                    <h1 class="fw-bold">T-rex Runner</h1>
+                                    <p class="fw-normal w-50 text-center mx-auto my-5">A clone of Google Chrome's T-rex-runner made using Godot.</p>
+                                </div>
+
+                                <div class="carousel-item text-center mb-5">
+                                    <h1 class="fw-bold">Portfolio</h1>
+                                    <p class="fw-normal w-50 text-center mx-auto my-5">You're looking at it right now. Made with HTML5, CSS3, Bootstrap, and a sprinkle of JQuery.</p>
+                                </div>
+
+                                <div class="carousel-item text-center mb-5">
+                                    <h1 class="fw-bold">Resume</h1>
+                                    <p class="fw-normal w-50 text-center mx-auto my-5">A resume contained within a webpage. Made with HTML5, CSS3, and Bootstrap.</p>
+                                </div>
+                            </div>
+
+                            <button class="carousel-control-prev justify-content-end" type="button" data-bs-target="#content-carousel" data-bs-slide="prev">
+                                <span class="bi-chevron-left ps-5 ms-5 reversed" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+
+                            <button class="carousel-control-next justify-content-start" type="button" data-bs-target="#content-carousel" data-bs-slide="next">
+                                <span class="bi-chevron-right reversed" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+
+                            <div class="carousel-indicators reversed">
+                                <button  id="content1" type="button" data-bs-target="#content-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button  id="content2" type="button" data-bs-target="#content-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button  id="content3" type="button" data-bs-target="#content-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button  id="content4" type="button" data-bs-target="#content-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
 
     <!--                                                        TESTIMONIALS -->
 
-        <div class="container-fluid">
+        <div class="container-fluid pb-5">
             <div class="my-5">
                 <h1 class="fw-bolder text-center py-5">Testimonials</h1>
             </div>
