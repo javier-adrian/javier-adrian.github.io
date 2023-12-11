@@ -27,3 +27,30 @@ body {
 footer > div > a {
     color: #999 !important;
 }
+
+.carousel-indicators .active {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #313131;
+}
+
+.carousel-indicators :not(.active){
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #313131;
+}
+
+
+.bi-chevron-left {
+    color: #313131 !important;
+    font-size: 34px !important;
+}
+.bi-chevron-right {
+    color: #313131 !important;
+    font-size: 34px !important;
+}
+.bi-person {
+    font-size: 128px !important;
+}
