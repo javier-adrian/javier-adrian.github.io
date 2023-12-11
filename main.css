@@ -8,7 +8,65 @@ body {
 
 #works-right {
     min-width: 328px;
+    max-width: 328px;
 }
+
+.container-creui {
+    position: relative;
+    width: 50%;
+    max-width: 328px;
+  }
+  
+  .image-creui {
+    display: block;
+    width: 328px;
+    height: auto;
+    max-width: 328px;
+  }
+  
+  .overlay-creui {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 328px;
+    width: 328px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000;
+    max-width: 328px;
+  }
+  
+  .container-creui:hover .overlay-creui {
+    opacity: .8;
+    max-width: 328px;
+  }
+
+  .text-creui {
+    color: #fafafa;
+    font-size: 14px;
+    position: absolute;
+    max-width: 328px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .text-creui > span {
+    color: #fafafa;
+    font-weight: bold;
+    font-size: 20px;
+    max-width: 328px;
+  }
+
+  .coming-soon {
+    width: 328px;
+    height: 328px;
+  }
 
 .reversed {
     background-color: #313131;
